@@ -19,7 +19,7 @@ Some of the subjects covered during the classes:
 
 ## Modules
 
-- Fundamentals
+- [Fundamentals](/src/fundamentals/)
 - Control Structures
 - Classes and Methods
 - Arrays and Collections
