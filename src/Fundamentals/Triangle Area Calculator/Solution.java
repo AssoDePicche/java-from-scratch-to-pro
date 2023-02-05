@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Solution {
-  private static final Scanner scanner = new Scanner(System.in);
+  private static final Scanner SCANNER = new Scanner(System.in);
 
   public static void main(String[] args) {
     double base, height;
@@ -14,12 +14,12 @@ public class Solution {
 
     height = getNextLine();
 
-    scanner.close();
+    SCANNER.close();
 
     System.out.println("The area of triangle is: " + (0.5 * base * height));
   }
 
   private static double getNextLine() {
-    return Double.valueOf(scanner.nextLine());
+    return Double.valueOf(SCANNER.nextLine().replace(",", "."));
   }
 }

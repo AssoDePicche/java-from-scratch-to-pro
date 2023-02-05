@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 public class Solution {
-  private static final Scanner scanner = new Scanner(System.in);
+  private static final Scanner SCANNER = new Scanner(System.in);
 
   public static void main(String[] args) {
     System.out.println("Type a number:");
 
     double number = getNextLine();
 
-    scanner.close();
+    SCANNER.close();
 
     raise(number, 2);
 
@@ -16,7 +16,7 @@ public class Solution {
   }
 
   private static double getNextLine() {
-    return Double.valueOf(scanner.nextLine());
+    return Double.valueOf(SCANNER.nextLine().replace(",", "."));
   }
 
   private static void raise(double base, double exponent) {

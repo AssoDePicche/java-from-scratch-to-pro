@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Solution {
-  public static final Scanner scanner = new Scanner(System.in);
+  public static final Scanner SCANNER = new Scanner(System.in);
 
   public static void main(String[] args) {
     double height, weight;
@@ -14,12 +14,12 @@ public class Solution {
 
     weight = getNextLine();
 
-    scanner.close();
+    SCANNER.close();
 
     System.out.println("Your BMI is: " + BMICalculator.calculate(height, weight));
   }
 
   public static double getNextLine() {
-    return Double.valueOf(scanner.nextLine().replace(",", "."));
+    return Double.valueOf(SCANNER.nextLine().replace(",", "."));
   }
 }

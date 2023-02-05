@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
 public class Solution {
-  public static final Scanner scanner = new Scanner(System.in);
+  public static final Scanner SCANNER = new Scanner(System.in);
 
   public static void main(String[] args) {
     System.out.println("Type the numeric value of the temperature:");
 
-    Double temperature = scanner.nextDouble();
+    Double temperature = Double.valueOf(SCANNER.nextLine().replace(",", "."));
 
     System.out.println("Choose the scale to the temperature:\n[1] Celsius\n[2] Fahrenheit\n[3] Kelvin\n[q] Quit");
 
-    String temperatureScale = scanner.next();
+    String temperatureScale = SCANNER.next();
 
-    scanner.close();
+    SCANNER.close();
 
     switch (temperatureScale) {
       case "q":
