@@ -20,7 +20,7 @@ Some of the subjects covered during the classes:
 ## Modules
 
 - [Fundamentals](/src/fundamentals/)
-- Control Structures
+- [Control Structures](/src/Control%20Structures/)
 - Classes and Methods
 - Arrays and Collections
 - Object-Oriented Programming
