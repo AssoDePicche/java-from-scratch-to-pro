@@ -21,7 +21,7 @@ Some of the subjects covered during the classes:
 
 - [Fundamentals](/src/fundamentals/)
 - [Control Structures](/src/Control%20Structures/)
-- Classes and Methods
+- [Classes and Methods](/src/Classes%20and%20Methods/)
 - Arrays and Collections
 - Object-Oriented Programming
 - Lambdas
