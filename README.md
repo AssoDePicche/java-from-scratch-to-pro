@@ -19,11 +19,11 @@ Some of the subjects covered during the classes:
 
 ## Modules
 
-- [Fundamentals](/src/fundamentals/)
-- [Control Structures](/src/Control%20Structures/)
-- [Classes and Methods](/src/Classes%20and%20Methods/)
-- [Arrays and Collections](/src/Arrays%20and%20Collections/)
-- Object-Oriented Programming
+- [Fundamentals](src/fundamentals/)
+- [Control Structures](src/Control%20Structures/)
+- [Classes and Methods](src/Classes%20and%20Methods/)
+- [Arrays and Collections](src/Arrays%20and%20Collections/)
+- [Object-Oriented Programming](src/Object-Oriented%20Programming/)
 - Lambdas
 - Stream API
 - Error Handling
