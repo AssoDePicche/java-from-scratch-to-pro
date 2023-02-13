@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Pokemon {
+abstract class Pokemon {
   private final String name;
 
   private final Type type;
