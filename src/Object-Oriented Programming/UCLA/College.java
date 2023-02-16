@@ -1,20 +1,17 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
 public class College {
   public static void main(String[] args) {
-    Course c1, c2, c3;
-
     Student student = new Student("Russel Westbrook");
 
-    c1 = new Course("Economics & Business");
+    List<Course> courses = Arrays.asList(
+        new Course("Economics & Business"),
+        new Course("Humanities & Cultures"),
+        new Course("Biology & Health"));
 
-    c2 = new Course("Humanities & Cultures");
-
-    c3 = new Course("Biology & Health");
-
-    student.enroll(c1);
-
-    student.enroll(c2);
-
-    student.enroll(c3);
+    courses.forEach(x -> student.enroll(x));
 
     if (student.getCourses().isEmpty()) {
       System.out.println(student + " is not enrolled in any course");
@@ -22,10 +19,10 @@ public class College {
       return;
     }
 
+    Stream<Course> enrolledCourses = student.getCourses().stream();
+
     System.out.println(student + " enrolled in:");
 
-    for (Course course : student.getCourses()) {
-      System.out.println(course);
-    }
+    enrolledCourses.forEach(System.out::println);
   }
 }
