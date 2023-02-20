@@ -25,7 +25,7 @@ Some of the subjects covered during the classes:
 - [Arrays and Collections](src/Arrays%20and%20Collections/)
 - [Object-Oriented Programming](src/Object-Oriented%20Programming/)
 - [Lambdas](src/Lambdas/)
-- Stream API
+- [Stream API](src/Stream%20API/)
 - Error Handling
 - Project: Minesweeper
 - Desktop Applications with Swing
