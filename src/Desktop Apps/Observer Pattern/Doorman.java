@@ -6,8 +6,10 @@ import java.util.Scanner;
 public class Doorman extends Thread {
   private final List<ArrivesAtThePartyObserver> observers = new ArrayList<>();
 
-  public void addArrivesAtThePartyObserver(ArrivesAtThePartyObserver observer) {
-    observers.add(observer);
+  public void addArrivesAtThePartyObserver(ArrivesAtThePartyObserver... observers) {
+    for (ArrivesAtThePartyObserver observer : observers) {
+      this.observers.add(observer);
+    }
   }
 
   public void run() {
@@ -22,9 +24,7 @@ public class Doorman extends Thread {
 
       ArrivesAtTheParty event = new ArrivesAtTheParty(new Date());
 
-      for (ArrivesAtThePartyObserver observer : observers) {
-        observer.arrive(event);
-      }
+      observers.stream().forEach(observer -> observer.arrive(event));
 
       break;
     }
