@@ -26,6 +26,8 @@ public class Doorman extends Thread {
 
       observers.stream().forEach(observer -> observer.arrive(event));
 
+      scanner.close();
+
       break;
     }
   }
